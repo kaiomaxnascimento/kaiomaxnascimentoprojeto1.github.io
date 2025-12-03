@@ -1,0 +1,207 @@
+.formacao {
+  background-color: #181818;
+  max-width: 100%;
+  padding-top: 8rem;
+}
+
+.formacao-cont {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  max-width: 80rem;
+  margin: 0 auto;
+  color: #fff;
+  position: relative;
+}
+
+.formacao-cont::after {
+  content: "";
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  background: url("/img/detalhe.svg") no-repeat;
+  bottom: -65px;
+  left: 20px;
+}
+
+.formacao-cont h2 {
+  padding: 2rem;
+  color: #f3f3f3;
+  letter-spacing: -5px;
+  font-size: 8rem;
+  max-width: 6ch;
+  text-transform: uppercase;
+  word-break: break-all;
+}
+
+.formacao-conteudo {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 0rem 2rem;
+}
+
+.formacao-text {
+  max-width: 40ch;
+  font-size: 1.5rem;
+  padding: 2rem 0rem;
+  color: #b3b3b3;
+}
+
+.formacao-text strong {
+  color: #fff;
+}
+
+.formacao-bloco {
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.graduacao,
+.curso-local {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #b3b3b3;
+}
+
+.formacao-lista {
+  background-color: #000;
+  padding: 1rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formacao-lista h3 {
+  flex: 1;
+}
+
+.formacao-curso {
+  position: relative;
+}
+
+.formacao-curso::before {
+  content: "";
+  width: 4px;
+  height: 20px;
+  position: absolute;
+  background: linear-gradient(#bef841, #67dd0a);
+  left: -20px;
+}
+
+.formacao-cursos {
+  position: relative;
+}
+
+.formacao-cursos h3 {
+  font-size: 1rem;
+  color: #b3b3b3;
+  padding: 2rem 0rem;
+  text-transform: uppercase;
+}
+
+.formacao-cursos h3::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  background: url("/img/cursos.svg") no-repeat;
+  left: -40px;
+  top: 25px;
+}
+
+.lista-extra li {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.lista-extra li span {
+  color: #b3b3b3;
+}
+
+.formacao-idiomas {
+  position: relative;
+}
+
+.formacao-idiomas h3 {
+  font-size: 1rem;
+  color: #b3b3b3;
+  padding: 2rem 0rem;
+  text-transform: uppercase;
+}
+
+.formacao-idiomas h3::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  background: url("/img/idiomas.svg") no-repeat;
+  left: -40px;
+  top: 25px;
+}
+
+.idioma-listas li {
+  margin-bottom: 1rem;
+}
+.idioma-listas li span {
+  color: #b3b3b3;
+}
+
+@media (max-width: 1200px) {
+  .formacao-bloco {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .formacao {
+    padding-top: 3rem;
+  }
+
+  .formacao-conteudo {
+    padding-bottom: 5rem;
+  }
+
+  .formacao-cont {
+    grid-template-columns: 1fr;
+  }
+
+  .formacao-cont h2 {
+    font-size: 4rem;
+    max-width: 10ch;
+  }
+
+  .formacao-idiomas h3::before {
+    position: initial;
+  }
+
+  .formacao-cursos h3::before {
+    position: initial;
+  }
+  .formacao-bloco {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 375px) {
+  .formacao-cont::after {
+  content: "";
+  width: 61px;
+  height: 95px;
+  position: absolute;
+  background: url("/img/detalhe.svg") no-repeat;
+  bottom: -25px;
+  left: 30px;
+}
+}
+
+@media (max-width: 300px) {
+  .formacao-curso {
+    word-break: break-all;
+  }
+}

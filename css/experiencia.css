@@ -1,0 +1,142 @@
+.experiencia {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0rem 2rem;
+  padding-bottom: 5rem;
+}
+
+.experiencia-titulo {
+  font-size: 8rem;
+  max-width: 5ch;
+  color: #414141;
+  text-transform: uppercase;
+  word-break: break-all;
+}
+
+.experiencia-formacao {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.experiencia-text1 {
+  max-width: 40ch;
+  font-size: 1.5rem;
+  padding: 2rem 0rem;
+}
+
+.formacao-detalhe {
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #ececec;
+  padding: 1.5rem;
+  border-radius: 4px;
+  position: relative;
+  gap: 1rem;
+}
+
+.formacao-detalhe::before {
+  content: "";
+  width: 5px;
+  height: 25px;
+  position: absolute;
+  background: linear-gradient(#b6f829, #67dd0a);
+  left: -5px;
+  top: 1.4rem;
+}
+
+.experiencia-ano {
+  position: absolute;
+  font-size: 0.8rem;
+  left: -5rem;
+  top: 1.6rem;
+  text-align: right;
+  width: 4rem;
+}
+
+.experiencia-area {
+  font-size: 1.2rem;
+}
+
+.experiencia-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-content: flex-start;
+}
+
+.experiencia-lista li {
+  align-content: start;
+  font-size: 0.8rem;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+@media (max-width: 900px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+  .experiencia-titulo {
+    font-size: 4rem;
+    /* word-break: initial; */
+    max-width: 15ch;
+    color: #464646;
+    padding: 2rem 0rem;
+  }
+  .experiencia-text1 {
+    padding: 2rem 0rem;
+  }
+
+  .experiencia-ano {
+    position: initial;
+    font-size: 0.8rem;
+    text-align: left;
+    width: 5rem;
+    order: 1;
+  }
+  .experiencia-ano::before {
+    content: "Ano: ";
+  }
+
+  .experiencia-ano::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    left: 1rem;
+    bottom: 1.7rem;
+    background: linear-gradient(#b8f339, #479e04);
+    position: absolute;
+  }
+}
+
+@media (max-width: 600px) {
+  .experiencia {
+    padding: 1rem;
+  }
+
+  .experiencia-titulo {
+    font-size: 3rem;
+    padding: 3rem 0rem 0rem 0rem;
+  }
+  .experiencia-text1 {
+    font-size: 1.2rem;
+    padding: 1rem 0rem;
+  }
+
+  .formacao-detalhe {
+    grid-template-columns: 1fr;
+  }
+  .formacao-detalhe p {
+    font-size: 0.9rem;
+  }
+
+  .experiencia-area {
+    word-break: break-all;
+  }
+}
